@@ -1,0 +1,17 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+ int n;
+ int range;
+ cout<<"enter the range:";
+ cin>>range;
+ cout<<"enter the number:";
+ cin>>n;
+ cout<<"Make a table :";
+ for (int i=1; i<=range; i++){
+cout<<n<<"x"<<i<<"="<<n*i<<endl;
+ }
+    return 0;
+}
