@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int num, rev, rem;
+    cout << "Palindrome numbers between 1 and 100 are: ";
+    for (num = 1; num <= 100; num++) {
+        int temp = num;
+        rev = 0;
+        while (temp != 0) {
+            rem = temp % 10;
+            rev = rev * 10 + rem;
+            temp = temp / 10;
+        }
+        if (num == rev)
+            cout << num << " ";
+    }
+    return 0;
+}
